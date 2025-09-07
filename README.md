@@ -25,4 +25,4 @@ A modern car dealearship showcase website built as part of an HCI lab project, e
 
 
 ## 🏆 Project Outcome
-- Received **Grade: 99 / High Distinction
+- Received Grade: 99 / High Distinction
