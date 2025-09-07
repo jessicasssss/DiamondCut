@@ -1,0 +1,389 @@
+@font-face {
+    font-family: molde-semi;
+    src: url(/Fonts-Molde/molde-semi.ttf);
+}
+@font-face {
+    font-family: molde-light;
+    src: url(/Fonts-Molde/molde-light.ttf);
+}
+@font-face {
+    font-family: molde-regular;
+    src: url(/Fonts-Molde/molde-regular.ttf);
+}
+
+.slider1{
+    margin-top: -60px;
+    overflow: hidden;
+}
+
+.slider1 img{
+    width: 100vw;
+    height: 100vh;
+    object-position: center;
+    object-fit: cover;
+    display: none;
+    filter: brightness(65%);
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider1 button{
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(128, 128, 128, 0);
+    color: white;
+   position: absolute;
+    cursor: pointer;
+    border: none;
+    font-size:20px;
+    padding: 10px 15px;
+    z-index: 2;
+}
+.prev{
+    left: 0%;
+}
+.next{
+    right: 0%;
+}
+ @keyframes fade{
+    
+    from{opacity: .5}
+    to {opacity: 1}
+ }
+
+.boxtg{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+.boxtg button{
+    font-family: molde-light;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    padding: 10px 29px;
+    background-color: rgba(67, 69, 68, 0.402);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.463);
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.boxtg button:hover{
+    background-color: rgba(68, 65, 65, 0.692);
+}
+
+.boxtg img{
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    align-items: center;
+    margin-top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#tag{
+    font-family: molde-semi;
+    background-color: transparent;
+}
+#desctg{
+    font-family: molde-light;
+    color: darkgrey;
+    background-color: transparent;
+}
+
+.featured-cars{
+    max-width: 90%;;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+.feat-text{
+    top: 100px;
+    background-color: transparent;
+    color: white;
+    font-family: molde-semi;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.feat-text a{
+    text-decoration: none;
+}
+.feat-text a:hover{
+    text-decoration: underline white;
+}
+.feat-text h2{
+    color: white;   
+    font-family: molde-semi;
+    background-color: transparent;
+}
+
+.featured-cars::-webkit-scrollbar{
+    display: none;
+}
+
+.featured-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.featured-wrap button{
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size:20px;
+    background-color: transparent;
+    padding: 10px 15px;
+}
+
+.featured-cars div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 10px;
+    grid-gap: 20px;
+    flex: none;
+}
+
+.featured-cars div img{
+    width: 100%;
+    filter: brightness(70%);
+    transition:  transform 0.5s;
+    border-radius: 8px;
+}
+.featured-cars div img:hover{
+    filter: brightness(100%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+@media  (max-width: 768px) {
+    .feat-text{
+        top:30px;
+    }
+    .featured-cars div{
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .featured-wrap{
+        margin: 5% auto;
+    }
+
+    .featured-wrap button{
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+    .slider1 img{
+        margin-top: 60px;
+        width: 100vw;    
+        height: 100vh;
+        margin-right: 0px;
+        object-fit: cover;
+        overflow: hidden;
+
+    }
+
+    .slider1{
+        height: auto;
+        object-fit: fill;
+    }
+
+    .boxtg{
+        margin-top: -70px;
+    }
+
+    .caropt ul li{
+        width: 122px;
+        margin-top: 4px;
+        margin-bottom: 3px;
+    }
+    .caropt  ul li a{
+        font-size: 9px;
+    }
+    .boxtg img{
+        height: 135px;
+        width: 135px;
+        margin-top: -90px;
+        left: 50%;
+    } 
+
+    .boxtg{
+        top: 59%;
+        font-size: 15px;
+    }
+ }
+
+ @media  (max-width: 426px){
+    .feat-text{
+        top: 20px;
+    }
+    .feat-text h2{
+        font-size: medium;
+    }
+    .featured-cars {
+        max-width: 100%;
+    }
+
+    .featured-cars div{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 5px;
+        grid-gap: 10px;
+    }
+
+    .featured-wrap button{
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .slider1 img{
+        object-fit: cover;
+    }
+
+    .boxtg{
+        margin-top: -60px;
+        top: 33%;
+        font-size: small;
+    }
+
+    .boxtg button{
+        padding: 7px;
+        font-size: 9px;
+    }
+
+    .caropt ul li{
+        width: 40px;
+        margin-top: 4px;
+        margin-bottom: 3px;
+    }
+    .caropt  ul li a{
+        font-size: 8px;
+    }
+
+    .boxtg img{
+        height: 120px;
+        width: 120px;
+        margin-top: -80px;
+        left: 50%;
+    } 
+    .boxtg{
+        top: 59%;
+        font-size: 12px;
+    }
+    
+}
+@media (max-width: 376px) {
+    .featured-cars div{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 5px;
+        grid-gap: 10px;
+    }
+
+    .featured-wrap button{
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+@media (max-width:320px){
+    .feat-text{
+        margin-top: 20px;
+        top: 10px;
+    }
+    .feat-text h2{
+        font-size: medium;
+    }
+    .featured-cars div{
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        padding: 5px;
+        grid-gap: 5px;
+    }
+
+    .featured-wrap button{
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+}
+
+@media (min-width:1440px){
+    .feat-text{
+        top: 110px;
+    }
+    .feat-text h2{
+        font-size: xx-large;
+    }
+    .featured-wrap button{
+        font-size: 2rem;
+    }
+    .slider1{
+        margin-top: -80px;
+    }
+
+    .slider1 button{
+        font-size:2rem;
+    }
+    .boxtg button{
+        padding: 10px 35px;
+        font-size: 1rem;
+    }
+    .boxtg img{
+        width: 250px;
+        height: 250px;
+        margin-top: -180px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #tag{
+        font-size: 2.5rem;
+    }
+    #desctg{
+        font-size: 1rem;
+    }
+ }
+
+@media (min-width:2560px){
+    .feat-text{
+        top: 230px;
+    }
+    .feat-text h2{
+        font-size: 3rem;
+    }
+    .featured-wrap button{
+        font-size: 3rem;
+    }
+    .slider1{
+        margin-top: -125px; 
+    }
+
+    .slider1 button{
+        font-size:3.5rem;
+    }
+    .boxtg button{
+        margin-top: 10px;
+        padding: 15px 40px;
+        font-size: 2rem;
+    }
+    .boxtg img{
+        width: 350px;
+        height: 350px;
+        margin-top: -28%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #tag{
+        font-size: 3.5rem;
+    }
+    #desctg{
+        font-size: 2rem;
+    }    
+}

@@ -1,0 +1,107 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DiamondCut</title>
+        <link rel="stylesheet" href="/css/styleHM.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script defer src="/js/app_slider.js"></script>
+        <script defer src="/js/app_sliderH.js"></script>
+        <script defer src="/js/app_formob.js"></script>
+    </head>
+
+
+    <body>
+        <header>
+            <div class="DC"><a href="./home.html">DiamondCut</a></div>
+            <nav>
+                <ul>
+                    <li><a href="./cars.html">Cars</a></li>
+                    <li><a href="./location.html">Location</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./logIn.html">Login</a></li>
+                </ul>
+            </nav>
+            <div id="ham-menu" onclick="clickmobile(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                
+                <ul class="for-mob">
+                    <li><a href="./cars.html">Cars</a></li>
+                    <li><a href="./location.html">Location</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./logIn.html">Login</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="slider1">
+            <div class="slides">
+                <img class="item" src="/Asset/Porsche_Car1.jpg" alt="img 1">
+                <img class="item" src="/Asset/Merc_car5.jpg" alt="img 2">
+                <img class="item" src="/Asset/AM_Car1.jpg" alt="img 3">
+                <img class="item" src="/Asset/Ferrari_Car1.jpg" alt="img 4">
+                <img class="item" src="/Asset/Bugatti_Car5.jpg" alt="img 5">
+            </div>
+            <button class="prev" onclick="control(-1)">&#10094</button>
+            <button class="next" onclick="control(1)">&#10095</button>
+        </div>
+
+        <div class="boxtg">
+            <img src="/Asset/logo.png" alt="#logo">
+            <h1 id ="tag">Drive Prestige. Own Luxury</h1>
+            <h4 id="desctg"> Get yours one now</h4>
+            <button onclick="window.location.href='logIn.html'">Join us now</button>
+        </div>
+        </div> 
+
+
+        <div class="feat-text">
+            <a href="./cars.html"><h2>Featured Cars</h2></a>
+        </div>
+        <div class="featured-wrap">    
+            <button class="prev" id="back">&#10094</button>
+            <div class="featured-cars">
+                <div>
+                    <span><img src="/Asset/FerrariPre_car2.jpg" alt="f1"></span>
+                    <span><img src="/Asset/Bugatti_Car2.jpg" alt="f2"></span>
+                    <span><img src="/Asset/AMPre_car1.jpg" alt="f3"></span>
+                </div>
+                <div>
+                    <span><img src="/Asset/Ferrari_Car2.jpg" alt="f4"></span>
+                    <span><img src="/Asset/AudiPre_car1.jpg" alt="f5"></span>
+                    <span><img src="/Asset/Porsche_Car7.jpg" alt="f6"></span>
+                </div>
+            </div>
+            <button class="next" id="next">&#10095</button>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <h2>DiamondCut Motors</h2>
+                
+                <div class="socials">
+                    <a href="https://www.instagram.com/mercedesbenz/"><i class=""><img src="/Asset/IG.png" alt="ig"></i></a>
+                    <a href="https://www.facebook.com/MercedesBenz/"><i class=""><img src="/Asset/FB.png" alt="fb"></i></a>
+                    <a href="https://twitter.com/MercedesBenz"><i class=""><img src="/Asset/X.png" alt="x"></i></a>
+                    <a href="https://www.youtube.com/@MercedesBenz"><i class=""><img src="/Asset/YT.png" alt="yt"></i></a>
+                </div>
+                <div class="navigate">
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./Cars.html">Our Collections</a></li>
+                        <li><a href="./aboutUs.html">Our Team</a></li>
+                        <li><a href="./location.html">Visit Us</a></li>
+                    </ul>
+                </div>
+                <div class="hlf"></div>
+                <div class="bottom">
+                    <p>DiamondCut Motors - A company under Indonesia Law, having its official seat in Jakarta, Indonesia</p>
+                    <p>Copyright 1998 - 2024. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,345 @@
+*{  
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header{
+    font-family: molde-semi;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.DC{
+    font-size: large;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.DC a{
+    color: white;
+    background-color: transparent;
+}
+
+nav{
+    background-color: transparent;  
+}
+
+header ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;  
+}
+
+ul a{
+    color: white;
+    background-color: transparent;  
+}
+
+ul li{
+    padding: 5px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+ul li:hover a{
+    text-decoration: underline;
+}
+#ham-menu{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#ham-menu div{
+    width: 35px;
+    height: 2px;
+    margin: 6px 0;
+    transition: 0.45s;
+    background-color: white;
+}
+
+.open .b1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.open .b2{
+    opacity: 0;
+}
+
+.open .b3{
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.open .for-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.847);
+    border-top: solid rgba(128, 128, 128, 0.266);
+}
+
+.for-mob{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 0 0 10px;
+}
+
+.for-mob li{
+    margin: 5px;
+    border-bottom: solid 0.5px grey;
+}
+
+.for-mob a{
+    background-color: transparent;
+}
+
+
+footer{
+    background-color: rgb(22, 22, 22);
+    margin-top: auto;
+}
+
+.container{
+    width: 100%;
+    padding: 47px 20px 10px;
+    background-color: transparent;
+}
+.container h2{
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: molde-semi;
+    color:white;
+    font-size: 15px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.socials a{
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.socials a i{
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    opacity: 0,9;
+}
+
+.socials img{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.socials a:hover img{
+    filter: brightness(100%);
+    transition: 0.3s;
+}
+.navigate{
+    margin: 30px;
+    background-color: transparent;
+}
+.navigate ul{
+    font-family: molde-semi;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: transparent;
+}
+
+.navigate li{
+    background-color: transparent;
+}
+
+.navigate ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.navigate ul li a:hover{
+    text-decoration: underline;
+}
+
+.hlf{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(50, 45, 45);
+}
+
+.bottom{
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom p{
+    color: rgb(105, 101, 101);
+    background-color: transparent;
+    font-family: molde-regular;
+    font-size: 11px;
+}
+
+@media (min-width: 2560px){
+    header{
+        height: 125px !important;
+    }
+    header ul li a{
+        font-size: 2rem !important;
+    }
+    header ul li{
+        padding: 0px 40px !important;
+    }
+    .DC{
+        font-size: 3rem !important;
+    }
+    .container h2{
+        font-size: 2.5rem !important;
+        margin-bottom: 40px !important;
+    }
+    .socials a{
+        padding: 20px !important;
+    }
+    .socials a i{
+        font-size: 3.5rem !important;
+    }
+    .navigate ul li a{
+        font-size: 1.5rem !important;
+        margin: 25px !important;
+    }
+    .bottom{
+        margin: 20px;
+    }
+    .bottom p{
+        font-size: 1.5rem !important;
+    }
+    .socials img{
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+ 
+}
+
+@media (min-width:1440px){
+    header{
+        height:80px;
+        font-size:1.5rem;
+    }
+    header ul li a{
+        font-size: 1rem;
+    }
+ 
+    header ul li{
+        padding: 0px 15px;
+    }
+    .DC{
+        font-size: 1.5rem;
+    }
+    .container h2{
+        font-size: 1.5rem;
+    }
+    .socials a i{
+        font-size: 2rem;
+    }
+
+    .navigate ul li a{
+        font-size: 1rem;
+    }
+
+    .bottom p{
+        font-size: 15px;
+    }
+    .socials img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width:768px){
+    .container h2{
+        font-size: 12px;
+    }
+    .socials img{
+        width: 20px;
+        height: 20px;
+    }
+    .navigate{
+        margin: 10px;
+    }
+    .navigate ul li a{
+        font-size: 12px;
+    }
+    .bottom{
+        padding: 15px;
+    }
+    
+    .bottom p{
+        font-size: 8px;
+    }
+    
+    .navigate ul{
+        flex-direction: column;
+    } 
+    .navigate ul li{
+        width:100%;
+        text-align: center;
+        margin: 5px;
+    }
+    .socials a{
+        padding: 5px;
+        margin: 2px;
+    }
+}
+
+@media (max-width:426px){
+        header nav{
+        display: none;
+       }
+       #ham-menu{
+        display: block;
+       }
+}
+
+@media (max-width:320px){
+    header ul li{
+        padding: 0 7px;
+    }
+
+}

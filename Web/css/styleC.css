@@ -1,0 +1,572 @@
+@font-face {
+    font-family: molde-semi;
+    src: url(/Fonts-Molde/molde-semi.ttf);
+}
+@font-face {
+    font-family: molde-light;
+    src: url(/Fonts-Molde/molde-light.ttf);
+}
+@font-face {
+    font-family: molde-regular;
+    src: url(/Fonts-Molde/molde-regular.ttf);
+}
+
+.slider{
+    margin-top: -60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.slider .slides .item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+.slider .slides .item img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    background-color: transparent;
+}
+
+.slider .slides .item .content{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 68%;
+}
+
+.DDBox{
+    display: flex;
+    background-color: transparent;
+   left: 7%;
+   top: 0px;
+   max-width: 60%;;
+    position: relative;
+    color: white;
+    height: auto;
+}
+.dropdown{
+    position: relative;
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+}
+
+.dropdown::before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    z-index: 5;
+    width: 8px;
+    height: 8px;
+    border: 1px solid grey;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+.dropdown.active::before{
+    transform: rotate(-225deg);
+    top:11px;
+}
+.dropdown input{
+    font-family: molde-semi;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    border: solid grey;
+}
+
+.dropdown .option{
+    position: absolute;
+    color: white;
+    font-size: 0.8rem;
+    top: 30px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(72, 72, 72, 0.755);
+    border-radius: 7px;
+    z-index: 1;
+    display: none;
+}
+.dropdown.active .option{
+    display: block;
+}
+
+.dropdown .option div{
+    font-family: molde-semi;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 12px 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover{
+    background-color: rgba(44, 40, 40, 0.385);
+    border-radius: 7px;
+}
+
+.NEW-CARS{
+    display: none;
+}
+.USED-CARS{
+    display: none;
+}
+.cartypes{
+    top: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: molde-semi;
+    left: 7%;
+    position: relative;
+    max-width: 80%;
+}
+.cartypes h2{
+    margin-top: 10px;
+    background-color: transparent;
+}
+.cartypes h3{
+    background-color: transparent;
+}
+.content h3{
+    margin-top: 15px;
+    color: white;
+    font-size: 32px;
+    font-family: molde-semi;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.content p{
+    margin-top: 12px;
+    color: white;
+    font-size: 16px;
+    font-family: molde-regular;
+    background-color: transparent;
+}
+ .item{
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s   ;
+}
+.slider button{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size:20px;
+    padding: 10px 15px;
+    z-index: 2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.prev{
+    left: 0%;
+}
+.next{
+    right: 0%;
+}
+@keyframes fade{
+    from{opacity: .5}
+    to {opacity: 1}
+}
+
+.product{
+    left: 7%;
+    position: relative;
+    overflow: hidden;
+    max-width: 90%;
+    
+}
+
+.gallery{
+    display: inline-block;
+    border-radius: 8px;
+    margin-right: 20px;
+    max-width: 30%;
+}
+
+.gallery img{
+    max-width: 100%;
+}
+
+.product h2{
+    font-family: molde-regular;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.desc{
+    position: absolute;
+    max-width: 90%;
+    top: 90%;
+    margin-left: 10px;
+    font-family: molde-light;
+    color: white;
+    background-color: transparent;
+    opacity: 0;
+}
+.gallery:hover .desc{
+    transition: all 0.5s;
+    opacity: 1;
+}
+.gallery img:hover{
+    filter: brightness(110%);
+    border: 1px solid;
+    transition: all 0.2s;
+    border-color: rgba(255, 255, 255, 0.511);
+    border-radius: 8px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    filter: brightness(90%);
+}
+
+.space{
+    background-color: transparent;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    background-color: transparent;
+}
+
+.content{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    background-color: transparent;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+@media  (min-width: 900px) and (min-height: 900px) {
+    .slider .slides .item .content{
+        top: 42%;
+        left: 7%;
+        width: 70%;
+    }
+
+    .content h3{
+        font-size: 50px;
+    }
+
+    .content p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product{
+        justify-content: center;
+        align-items: center;
+        width: 850px;
+     }
+    
+    .gallery{
+        position: relative;
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .desc{
+        top: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .slides{
+      margin-top: 60px;
+    }
+    .slider .slides .item .content{
+        font-size: 40px;
+    }
+    .content h3{
+        font-size: 22px;
+    }
+
+    .content p{
+        margin-top: 12px;
+        font-size: 13px;
+    }
+    .newtag{
+        left: 5%;
+    }
+    
+    .gallery{
+        margin-right: 12px;
+    }
+    .product h2{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .desc{
+        top: 70%;
+        font-size: 1.8vw;
+    }
+    .navigate ul{
+        flex-direction: column;
+    } 
+    .navigate ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socials a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .head{
+        margin-top: 60px;
+    }
+
+    .boxtg button{
+        padding: 7px;
+        font-size: 9px;
+    }
+
+    .caropt ul li{
+        width: 40px;
+        margin-top: 4px;
+        margin-bottom: 3px;
+    }
+    .caropt  ul li a{
+        font-size: 8px;
+    }
+
+    .slides{
+        margin-top: 60px;
+    }
+    .slider .slides .item .content{
+        top: 32%;
+        left: 9%;
+        width: 70%;
+    }
+  
+    .content h3{
+        font-size: 20px;
+    }
+  
+    .content p{
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .newtag{
+        left: 5%;
+        width: 300px;
+    }
+    
+    .product{
+        width: 300px;
+    }
+      
+    .gallery{
+        position: relative;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+      
+    .product h2{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .desc{
+        font-size: 3vw;  
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .content h3{
+        font-size: 17px;
+    }
+    .content p{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .slider .slides .item .content{
+        top: 30%;
+        left: 12%;
+        width: 70%;
+    }
+
+    .desc{
+        font-size: 4vw;
+    }
+}
+
+@media (min-width:1440px){
+    .slider{
+        margin-top: -80px;
+    }
+    .slider button{
+        font-size:2rem;
+    }
+    .newtag h2{
+        font-size: 2rem;
+    }
+    .newtag h3{
+        font-size: 1.5rem;
+    }
+
+    .gallery{
+        position: relative;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+      
+    .product h2{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .desc{
+        top: 85%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:2560px){
+    .DDBox{
+       max-width: 80%;;
+        position: relative;
+        color: white;
+        height: auto;
+    }
+    .dropdown{
+        position: relative;
+        margin-top: 40px;
+        height: 50px;
+        width: 300px;
+    }
+    .dropdown::before{
+        top: 18px;
+        border: 2px solid grey;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+    }
+    
+    .dropdown.active::before{
+        top:22px;
+    }
+    .dropdown input{
+        font-size: x-large;
+    }
+    
+    .dropdown .option{
+        top: 50px;
+        font-size: x-large;
+    }
+    .cartypes h2{
+        font-size: 4rem;
+    }
+    .cartypes h3{
+        font-size: 3rem;
+    }
+    .slider{
+        margin-top: -125px;
+    }
+    .slider button{
+        font-size: 3.5rem;
+    }
+    .container h2{
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    .socials a{
+        padding: 20px;
+    }
+    .socials a i{
+        font-size: 3.5rem;
+    }
+    .navigate ul li a{
+        font-size: 1.5rem;
+        margin: 25px;
+    }
+    .bottom{
+        margin: 20px
+    }
+
+    .bottom p{
+        font-size: 1.5rem;
+    }
+    .content h3{
+        font-size: 4rem;
+    }
+  
+    .content p{
+        margin-top: 15px;
+        font-size: 2rem;
+    }
+    .newtag{
+        width: 1000px;
+    }
+    .newtag h2{
+        font-size: 3rem;
+    }
+    .newtag h3{
+        font-size: 2rem;
+    }
+
+    .gallery{
+        margin-bottom: 50px;
+        margin-right: 40px;
+    }
+      
+    .product h2{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 3rem;
+    }
+    .desc{
+        top: 85%;
+        font-size: 2.5rem;
+    }
+ }

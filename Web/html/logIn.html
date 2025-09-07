@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleLI.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/appLI.js" defer></script>
+    <script defer src="/js/app_formob.js"></script>
+    <title>DC: Login</title>
+</head>
+<body>
+    <header>
+        <div class="DC"><a href="./home.html">DiamondCut</a></div>
+        <nav>
+            <ul>
+                <li><a href="./cars.html">Cars</a></li>
+                <li><a href="./location.html">Location</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./logIn.html">Login</a></li>
+            </ul>
+        </nav>
+        <div id="ham-menu" onclick="clickmobile(this)">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+            
+            <ul class="for-mob">
+                <li><a href="./cars.html">Cars</a></li>
+                <li><a href="./location.html">Location</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./logIn.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+     <div class="wrapper">
+        <div class="imgwrap">
+            <img src="/Asset/Bugatti_Car1.jpg" alt="bg">
+        </div>
+        <div class="log_wrapper">
+            <div class="form">
+                <div class="heading">Login</div>
+                <form action="" class="inputp" id="form">
+                    <input type="text" class="input" placeholder="Username" id="username">
+                    <input type="text" class="input" placeholder="E-mail" id="email">
+                    <input type="text" class="input" placeholder="Phone Number" id="number">
+                    <input type="password" class="input" placeholder="Password" id="pass">
+                    <input type="password" class="input" placeholder="Confirm Password" id="confirm-pass">
+                    <p class="log" id="error"></p>
+                    <label>
+                        <input type="checkbox" id="terms" name="terms"> I agree to the terms and conditions
+                    </label>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
