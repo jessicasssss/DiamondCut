@@ -1,4 +1,4 @@
-#💎 DiamondCut
+# DiamondCut 💎 
 
 A modern car dealearship showcase website built as part of an HCI lab project, earning a score 99 (High Distinction).
 
