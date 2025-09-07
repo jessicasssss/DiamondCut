@@ -1,14 +1,14 @@
 @font-face {
     font-family: molde-semi;
-    src: url(/Fonts-Molde/molde-semi.ttf);
+    src: url(../Fonts-Molde/molde-semi.ttf);
 }
 @font-face {
     font-family: molde-light;
-    src: url(/Fonts-Molde/molde-light.ttf);
+    src: url(../Fonts-Molde/molde-light.ttf);
 }
 @font-face {
     font-family: molde-regular;
-    src: url(/Fonts-Molde/molde-regular.ttf);
+    src: url(../Fonts-Molde/molde-regular.ttf);
 }
 
 .slider{
